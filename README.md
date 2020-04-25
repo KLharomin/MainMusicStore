@@ -1,2 +1,2 @@
 # MainMusicStore
-Udemy-Eğitim Projesidir.
+UdemyEğitimi - MusicStore Ticaret Projesidir.
