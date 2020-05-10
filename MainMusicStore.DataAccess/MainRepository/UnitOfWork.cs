@@ -14,6 +14,7 @@ namespace MainMusicStore.DataAccess.MainRepository
         {
             _db = db;
             Category = new CategoryRepository(_db);
+            //Category repository ve spcallrepository direk olarak _db nesnesi ister o yüzden verildi.
             SPCall = new SPCallRepository(_db);
         }
 
@@ -30,6 +31,7 @@ namespace MainMusicStore.DataAccess.MainRepository
         public void Save()
         {
             _db.SaveChanges();
+            //category ve spcall için save yazmak gerekmez zaten bunu burası yapacak
         }
     }
 }
