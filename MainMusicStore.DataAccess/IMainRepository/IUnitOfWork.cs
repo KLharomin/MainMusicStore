@@ -9,6 +9,7 @@ namespace MainMusicStore.DataAccess.IMainRepository
         //Unit of workün kontrolüde olmasını istediğin şeyler nelerse onları yazarsın burada.
         ICategoryRepository Category { get; }
         ISPCallRepository SPCall { get; }
+        ICoverTypeRepository CoverType { get; }
         void Save();
     }
 }

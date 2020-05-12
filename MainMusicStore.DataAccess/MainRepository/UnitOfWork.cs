@@ -15,12 +15,15 @@ namespace MainMusicStore.DataAccess.MainRepository
             _db = db;
             Category = new CategoryRepository(_db);
             //Category repository ve spcallrepository direk olarak _db nesnesi ister o yüzden verildi.
+            CoverType = new CoverTypeRepository(_db);
             SPCall = new SPCallRepository(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
 
         public ISPCallRepository SPCall { get; private set; }
+
+        public ICoverTypeRepository CoverType { get; private set; }
 
         public void Dispose()
         {
